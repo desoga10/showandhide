@@ -1,23 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import SampleFive from './example-one/SampleFive';
+// import SampleFour from './example-one/SampleFour';
+// import SampleThree from './example-one/SampleThree';
+// import SampleTwo from './example-one/SampleTwo';
+// import SampleOne from './example-one/SampleOne';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <SampleOne /> */}
+      {/* <SampleTwo /> */}
+      {/* <SampleThree /> */}
+      {/* <SampleFour /> */}
+      <SampleFive />
     </div>
   );
 }
