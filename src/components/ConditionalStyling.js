@@ -2,8 +2,6 @@ import React, { useState } from 'react'
 
 const SampleFive = () => {
   //Using CSS styles
-
-
   const [toggle, setToggle] = useState(true);
 
   const handleClick = () => {

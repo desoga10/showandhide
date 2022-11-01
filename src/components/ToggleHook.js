@@ -1,7 +1,7 @@
 import React, { useState, useCallback } from 'react'
 
 
-const SampleTwo = () => {
+const ToggleHook = () => {
   //Using useToggle Hook
 
   const useToggle = (initialState = false) => {
@@ -31,4 +31,4 @@ const SampleTwo = () => {
   )
 }
 
-export default SampleTwo
+export default ToggleHook

@@ -1,17 +1,18 @@
 import React, { useState } from 'react'
 
-const SampleFour = () => {
-  //Using IF ELSE statements
+const Ternary = () => {
+  //Using a Ternary Operator
   const [toggle, setToggle] = useState(true);
 
   const handleClick = () => {
     setToggle(!toggle);
   };
 
-  if (toggle) {
-    return (
-      <div>
-        <button onClick={handleClick} class="btn btn-primary mb-5">Toggle State</button>
+  return (
+    <div>
+      <button onClick={handleClick} class="btn btn-primary mb-5">Toggle State</button>
+
+      {toggle ?
         <ul class="list-group">
           <li class="list-group-item">An item</li>
           <li class="list-group-item">A second item</li>
@@ -19,11 +20,11 @@ const SampleFour = () => {
           <li class="list-group-item">A fourth item</li>
           <li class="list-group-item">And a fifth one</li>
         </ul>
-      </div>
-    )
-  } else {
-    return <button onClick={handleClick} class="btn btn-primary mb-5">Toggle State</button>
-  }
+        :
+        <></>
+      }
+    </div>
+  )
 }
 
-export default SampleFour
+export default Ternary
